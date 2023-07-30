@@ -85,7 +85,7 @@ int main(void) {
   int recordSz = 0;
 
   recordSz = parseData("input.txt", &pRecords);
-  // printRecords(pRecords, recordSz);
+  printRecords(pRecords, recordSz);
 
   displayRecordsInHash(pRecords, recordSz);
 }
