@@ -14,13 +14,14 @@ struct RecordType {
 
 // Struct called HashType that holds the records and the next one afterwards
 struct HashType {
-  int key;
   struct RecordType record;
   struct HashType *next;
 };
 
 // Hash function that returns the remainder after it is divided by 31
-int hash(int x) { return x % 31; }
+int hash(int x) { 
+  return x % 31; 
+}
 
 // parses input file to an integer array
 int parseData(char *inputFileName, struct RecordType **ppData) {
